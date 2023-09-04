@@ -1,0 +1,3147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC28455A-583A-4F5A-B1A2-28260FB09579}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SGL.My.MyApplication</StartupObject>
+    <RootNamespace>SGL</RootNamespace>
+    <AssemblyName>SGL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Apps\SGL\aer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SGL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SGL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono_produccion.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F69A518CA8144DBC2BA92297ACFFF5B4D76C4FEA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SGL_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.22.1.4\lib\net452\DevExpress.Data.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Outlook.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Outlook.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="NDAgroComm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NDAgroComm.dll</HintPath>
+    </Reference>
+    <Reference Include="NetOffice, Version=1.7.4.11, Culture=neutral, PublicKeyToken=7292cd2a8b1e0703, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.1.7.4.11\lib\net45\NetOffice.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OfficeApi, Version=1.7.4.11, Culture=neutral, PublicKeyToken=7292cd2a8b1e0703, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.1.7.4.11\lib\net45\OfficeApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OutlookApi, Version=1.7.4.11, Culture=neutral, PublicKeyToken=7292cd2a8b1e0703, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Outlook.1.7.4.11\lib\net45\OutlookApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management">
+      <HintPath>..\packages\System.Management.dll.1.0.0\lib\System.Management.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.XML" />
+    <Reference Include="VBIDEApi, Version=1.7.4.11, Culture=neutral, PublicKeyToken=7292cd2a8b1e0703, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOffice.Core.1.7.4.11\lib\net45\VBIDEApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Excel\Actualizador\Actualizador.vb" />
+    <Compile Include="Clases\Excel\Excel.vb" />
+    <Compile Include="Clases\Mantenedores\Bancos.vb" />
+    <Compile Include="Clases\Mantenedores\Casa.vb" />
+    <Compile Include="Clases\Mantenedores\CategoriasBalance.vb" />
+    <Compile Include="Clases\Mantenedores\CategoriasFecha.vb" />
+    <Compile Include="Clases\Mantenedores\CategoriasSexo.vb" />
+    <Compile Include="Clases\Mantenedores\CategoriasVacas.vb" />
+    <Compile Include="Clases\Mantenedores\Centros2.vb" />
+    <Compile Include="Clases\Mantenedores\CentrosSalas.vb" />
+    <Compile Include="Clases\Mantenedores\ClasesContables.vb" />
+    <Compile Include="Clases\Mantenedores\Clasificacion.vb" />
+    <Compile Include="Clases\Mantenedores\ClientesPlanta.vb" />
+    <Compile Include="Clases\Mantenedores\ControlLechero.vb" />
+    <Compile Include="Clases\Mantenedores\CuentasContables.vb" />
+    <Compile Include="Clases\Mantenedores\CuentasItemGasto.vb" />
+    <Compile Include="Clases\Mantenedores\Empleados.vb" />
+    <Compile Include="Clases\Mantenedores\Empresas.vb" />
+    <Compile Include="Clases\Mantenedores\eSuite.vb" />
+    <Compile Include="Clases\Mantenedores\GPBodegas.vb" />
+    <Compile Include="Clases\Mantenedores\GPBodegasUsuario.vb" />
+    <Compile Include="Clases\Mantenedores\GPCuentasContables.vb" />
+    <Compile Include="Clases\Mantenedores\GPItemGastos.vb" />
+    <Compile Include="Clases\Mantenedores\ItemsGastoContables.vb" />
+    <Compile Include="Clases\Mantenedores\Medicamentos.vb" />
+    <Compile Include="Clases\Mantenedores\MovGanado.vb" />
+    <Compile Include="Clases\Mantenedores\MSTR_Patologias.vb" />
+    <Compile Include="Clases\Mantenedores\MSTR_UsuariosBodegas.vb" />
+    <Compile Include="Clases\Mantenedores\MSTR_CuentasContables.vb" />
+    <Compile Include="Clases\Mantenedores\MSTR_INVProductos.vb" />
+    <Compile Include="Clases\Mantenedores\MSTR_ProductosUrea.vb" />
+    <Compile Include="Clases\Mantenedores\MSTR_Usuarios.vb" />
+    <Compile Include="Clases\Mantenedores\Plantascbo.vb" />
+    <Compile Include="Clases\Mantenedores\Poblacion.vb" />
+    <Compile Include="Clases\Mantenedores\PotrerosPorCentro.vb" />
+    <Compile Include="Clases\Mantenedores\Relacion.vb" />
+    <Compile Include="Clases\Mantenedores\Salas.vb" />
+    <Compile Include="Clases\Mantenedores\StockBodega.vb" />
+    <Compile Include="Clases\Mantenedores\StockBodegaTrl.vb" />
+    <Compile Include="Clases\Mantenedores\TipoBolo.vb" />
+    <Compile Include="Clases\Mantenedores\TipoBudget.vb" />
+    <Compile Include="Clases\Mantenedores\TipoCentros.vb" />
+    <Compile Include="Clases\Mantenedores\TipoDocumentosVentas.vb" />
+    <Compile Include="Clases\Mantenedores\TipoMovsAjuste.vb" />
+    <Compile Include="Clases\Mantenedores\TiposSolidos.vb" />
+    <Compile Include="Clases\Mantenedores\TipoUrea.vb" />
+    <Compile Include="Clases\Mantenedores\TrasladosGanado_ListadoCentros.vb" />
+    <Compile Include="Clases\Mantenedores\TrasladosGanado_ListadoCentrosRecepcion.vb" />
+    <Compile Include="Clases\Mantenedores\MSTR_INVBodegas.vb" />
+    <Compile Include="Clases\Mantenedores\TRLEmpresasIntComp.vb" />
+    <Compile Include="Clases\Mantenedores\UsuarioPermisos.vb" />
+    <Compile Include="Clases\Negocio\Ganado - Celos\GndCelos.vb" />
+    <Compile Include="Clases\Negocio\SQLData.vb" />
+    <Compile Include="Extensiones\MetodosExtension.vb" />
+    <Compile Include="Clases\Mantenedores\Categorias.vb" />
+    <Compile Include="Clases\Mantenedores\Causas.vb" />
+    <Compile Include="Clases\Mantenedores\CausasDecomisos.vb" />
+    <Compile Include="Clases\Mantenedores\CausasVentas.vb" />
+    <Compile Include="Clases\Mantenedores\CentrosEstanques.vb" />
+    <Compile Include="Clases\Mantenedores\CentrosPayroll.vb" />
+    <Compile Include="Clases\Mantenedores\CentrosTodos.vb" />
+    <Compile Include="Clases\Mantenedores\CGPerfiles.vb" />
+    <Compile Include="Clases\Mantenedores\Clientes.vb" />
+    <Compile Include="Clases\Mantenedores\CondicionesRevPP.vb" />
+    <Compile Include="Clases\Mantenedores\EstadosAjuste.vb" />
+    <Compile Include="Clases\Mantenedores\EstadosReproductivos.vb" />
+    <Compile Include="Clases\Mantenedores\EstadosTraslados.vb" />
+    <Compile Include="Clases\Mantenedores\FarmacosMastitis.vb" />
+    <Compile Include="Clases\Mantenedores\FarmacosCojas.vb" />
+    <Compile Include="Clases\Mantenedores\FarmacosPatologia.vb" />
+    <Compile Include="Clases\Mantenedores\FechasCubiertas.vb" />
+    <Compile Include="Clases\Mantenedores\Funcionarios.vb" />
+    <Compile Include="Clases\Mantenedores\Inseminadores.vb" />
+    <Compile Include="Clases\Mantenedores\menu_perfiles.vb" />
+    <Compile Include="Clases\Mantenedores\menu_principal.vb" />
+    <Compile Include="Clases\Mantenedores\MotivoHorasExtras.vb" />
+    <Compile Include="Clases\Mantenedores\Nomenclaturas.vb" />
+    <Compile Include="Clases\Mantenedores\Patologias.vb" />
+    <Compile Include="Clases\Mantenedores\perfiles.vb" />
+    <Compile Include="Clases\Mantenedores\Proveedores.vb" />
+    <Compile Include="Clases\Mantenedores\Razas.vb" />
+    <Compile Include="Clases\Mantenedores\RCS_ListadoAños.vb" />
+    <Compile Include="Clases\Mantenedores\Recepcionadores.vb" />
+    <Compile Include="Clases\Mantenedores\Temporadas.vb" />
+    <Compile Include="Clases\Mantenedores\TipoGuiasTraslados.vb" />
+    <Compile Include="Clases\Mantenedores\TipoPotreros.vb" />
+    <Compile Include="Clases\Mantenedores\TiposAjusteEntrada.vb" />
+    <Compile Include="Clases\Mantenedores\TipoAsignacionesDiios.vb" />
+    <Compile Include="Clases\Mantenedores\TipoCojeras.vb" />
+    <Compile Include="Clases\Mantenedores\TipoDesechos.vb" />
+    <Compile Include="Clases\Mantenedores\Centros.vb" />
+    <Compile Include="Clases\Mantenedores\Condiciones.vb" />
+    <Compile Include="Clases\Mantenedores\EstadosProductivos.vb" />
+    <Compile Include="Clases\Mantenedores\TipoDocumentos.vb" />
+    <Compile Include="Clases\Mantenedores\TipoFallasDiios.vb" />
+    <Compile Include="Clases\Mantenedores\TipoMovimientos.vb" />
+    <Compile Include="Clases\Mantenedores\TiposAjusteSalida.vb" />
+    <Compile Include="Clases\Mantenedores\TiposVentas.vb" />
+    <Compile Include="Clases\Mantenedores\TipoTraslados.vb" />
+    <Compile Include="Clases\Mantenedores\Toros.vb" />
+    <Compile Include="Clases\Mantenedores\TorosInseminaciones.vb" />
+    <Compile Include="Clases\Mantenedores\Usuarios_ivs.vb" />
+    <Compile Include="Clases\Mantenedores\Veterinarios.vb" />
+    <Compile Include="Clases\Negocio\Conexion.vb" />
+    <Compile Include="Clases\Negocio\Potreros.vb" />
+    <Compile Include="Extensiones\ModuloCelos_LV_Ext.vb" />
+    <Compile Include="Formularios\Baston\frmAlarmas.Designer.vb">
+      <DependentUpon>frmAlarmas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Baston\frmAlarmas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Baston\frmAlarmasMensaje.Designer.vb">
+      <DependentUpon>frmAlarmasMensaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Baston\frmAlarmasMensaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Baston\frmBastonV2.Designer.vb">
+      <DependentUpon>frmBastonV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Baston\frmBastonV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Baston\frmLeerDispositivoV3.Designer.vb">
+      <DependentUpon>frmLeerDispositivoV3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Baston\frmLeerDispositivoV3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmCasa.designer.vb">
+      <DependentUpon>frmCasa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmCasa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmCasa_Editar.designer.vb">
+      <DependentUpon>frmCasa_Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmCasa_Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmCasa_Nuevo.Designer.vb">
+      <DependentUpon>frmCasa_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmCasa_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmClasificacionSitio.designer.vb">
+      <DependentUpon>frmClasificacionSitio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmClasificacionSitio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmClasificacionSitio_Editar.designer.vb">
+      <DependentUpon>frmClasificacionSitio_Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmClasificacionSitio_Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmClasificacionSitio_Nuevo.designer.vb">
+      <DependentUpon>frmClasificacionSitio_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmClasificacionSitio_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmConsumoLuzReporte.Designer.vb">
+      <DependentUpon>frmConsumoLuzReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmConsumoLuzReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmConsumoLuz_Editar.Designer.vb">
+      <DependentUpon>frmConsumoLuz_Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmConsumoLuz_Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmConsumoLuz_Ingreso.Designer.vb">
+      <DependentUpon>frmConsumoLuz_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmConsumoLuz_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmLuzMenu.Designer.vb">
+      <DependentUpon>frmLuzMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmLuzMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmParametros.Designer.vb">
+      <DependentUpon>frmParametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmParametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmParametros_Editar.Designer.vb">
+      <DependentUpon>frmParametros_Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmParametros_Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmPoblacion.Designer.vb">
+      <DependentUpon>frmPoblacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmPoblacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmPoblacion_Editar.Designer.vb">
+      <DependentUpon>frmPoblacion_Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmPoblacion_Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmPoblacion_Nuevo.Designer.vb">
+      <DependentUpon>frmPoblacion_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmPoblacion_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmRelacion.Designer.vb">
+      <DependentUpon>frmRelacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmRelacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmRelacion_Editar.Designer.vb">
+      <DependentUpon>frmRelacion_Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmRelacion_Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmRelacion_Nuevo.Designer.vb">
+      <DependentUpon>frmRelacion_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsumoLuz\frmRelacion_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmMantencion.Designer.vb">
+      <DependentUpon>frmMantencion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmMantencion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\SolicitudesSAMM.Designer.vb">
+      <DependentUpon>SolicitudesSAMM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\SolicitudesSAMM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Bodegas\frmBodegas_AsignarUsuarios.Designer.vb">
+      <DependentUpon>frmBodegas_AsignarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Bodegas\frmBodegas_AsignarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\CuentasContables\frmCuentasContables.Designer.vb">
+      <DependentUpon>frmCuentasContables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\CuentasContables\frmCuentasContables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\CuentasContables\frmCuentasContablesAgregar.Designer.vb">
+      <DependentUpon>frmCuentasContablesAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\CuentasContables\frmCuentasContablesAgregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Estanques\frmEstanques.Designer.vb">
+      <DependentUpon>frmEstanques.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Estanques\frmEstanques.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Estanques\frmEstanquesIngreso.Designer.vb">
+      <DependentUpon>frmEstanquesIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Estanques\frmEstanquesIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Productos\frmProductosConcentrado.Designer.vb">
+      <DependentUpon>frmProductosConcentrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Productos\frmProductosConcentrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Productos\frmProductosConcentradoDetalle.Designer.vb">
+      <DependentUpon>frmProductosConcentradoDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Productos\frmProductosConcentradoDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuariosCambioContrasena.Designer.vb">
+      <DependentUpon>frmUsuariosCambioContrasena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuariosCambioContrasena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuarios_AsignacionCentros.designer.vb">
+      <DependentUpon>frmUsuarios_AsignacionCentros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuarios_AsignacionCentros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuarios_Nuevo.Designer.vb">
+      <DependentUpon>frmUsuarios_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuarios_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuario_RecuperarPass.Designer.vb">
+      <DependentUpon>frmUsuario_RecuperarPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuario_RecuperarPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Veterinarios\frmVeterinarios.Designer.vb">
+      <DependentUpon>frmVeterinarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Veterinarios\frmVeterinarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Veterinarios\frmVeterinariosCreacion.Designer.vb">
+      <DependentUpon>frmVeterinariosCreacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Veterinarios\frmVeterinariosCreacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Carga\frmCarga.Designer.vb">
+      <DependentUpon>frmCarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Carga\frmCarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Carga\frmCargaBI.Designer.vb">
+      <DependentUpon>frmCargaBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Carga\frmCargaBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\CierresTemporada\frmCierresTemporada.Designer.vb">
+      <DependentUpon>frmCierresTemporada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\CierresTemporada\frmCierresTemporada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\CierresTemporada\frmCierresTemporadaIngreso.Designer.vb">
+      <DependentUpon>frmCierresTemporadaIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\CierresTemporada\frmCierresTemporadaIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\frmCierresDetalle.Designer.vb">
+      <DependentUpon>frmCierresDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\frmCierresDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\frmCierresIngreso.Designer.vb">
+      <DependentUpon>frmCierresIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\frmCierresIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\frmComparaBaston.Designer.vb">
+      <DependentUpon>frmComparaBaston.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\frmComparaBaston.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\Reportes\frptCierreMensualGanado.Designer.vb">
+      <DependentUpon>frptCierreMensualGanado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Cierre\Reportes\frptCierreMensualGanado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\ConteoReportes\frmConteoAnimales.Designer.vb">
+      <DependentUpon>frmConteoAnimales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\ConteoReportes\frmConteoAnimales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\ConteoReportes\frmDetalleConteo.Designer.vb">
+      <DependentUpon>frmDetalleConteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\ConteoReportes\frmDetalleConteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Conteo\frmBastonV2Conteo.Designer.vb">
+      <DependentUpon>frmBastonV2Conteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Conteo\frmBastonV2Conteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Conteo\frmComparaBastonConteo.Designer.vb">
+      <DependentUpon>frmComparaBastonConteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Conteo\frmComparaBastonConteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Conteo\frmDiasBastoneo.Designer.vb">
+      <DependentUpon>frmDiasBastoneo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Conteo\frmDiasBastoneo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Conteo\frptConteoAnimales.Designer.vb">
+      <DependentUpon>frptConteoAnimales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Conteo\frptConteoAnimales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Crianza\frmGanadoInmunidad.Designer.vb">
+      <DependentUpon>frmGanadoInmunidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Crianza\frmGanadoInmunidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Crianza\frmGanadoInmunidadIngreso.Designer.vb">
+      <DependentUpon>frmGanadoInmunidadIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Crianza\frmGanadoInmunidadIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosReasignar.designer.vb">
+      <DependentUpon>frmAdminDiiosReasignar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosReasignar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoInventarioDIIO.designer.vb">
+      <DependentUpon>frmAjustesIngresoInventarioDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoInventarioDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoTipoAjuste.Designer.vb">
+      <DependentUpon>frmAjustesIngresoTipoAjuste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoTipoAjuste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Medicamentos\frmMedicamentos.Designer.vb">
+      <DependentUpon>frmMedicamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Medicamentos\frmMedicamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Medicamentos\frmMedicamentosIngreso.Designer.vb">
+      <DependentUpon>frmMedicamentosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Medicamentos\frmMedicamentosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Tipo Desechos\frmTipoDesechos.Designer.vb">
+      <DependentUpon>frmTipoDesechos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Tipo Desechos\frmTipoDesechos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Tipo Desechos\frmTipoDesechosNuevo.Designer.vb">
+      <DependentUpon>frmTipoDesechosNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Tipo Desechos\frmTipoDesechosNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioCategoriaCargaMasiva.Designer.vb">
+      <DependentUpon>frmCambioCategoriaCargaMasiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioCategoriaCargaMasiva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazasCodigos.Designer.vb">
+      <DependentUpon>frmCambioRazasCodigos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazasCodigos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazasIngresar.Designer.vb">
+      <DependentUpon>frmCambioRazasIngresar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazasIngresar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazas.Designer.vb">
+      <DependentUpon>frmCambioRazas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisDevolucion.Designer.vb">
+      <DependentUpon>frmAdminDosisDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisDevolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisEntrega.designer.vb">
+      <DependentUpon>frmAdminDosisEntrega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisEntrega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Causas\frmCausas.Designer.vb">
+      <DependentUpon>frmCausas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Causas\frmCausas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Causas\frmCausas_Agregar.Designer.vb">
+      <DependentUpon>frmCausas_Agregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Causas\frmCausas_Agregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Farmacos\frmFarmacos.designer.vb">
+      <DependentUpon>frmFarmacos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Farmacos\frmFarmacos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Farmacos\frmFarmacosIngreso.designer.vb">
+      <DependentUpon>frmFarmacosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Farmacos\frmFarmacosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Inseminadores\frmInseminadores.designer.vb">
+      <DependentUpon>frmInseminadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Inseminadores\frmInseminadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Inseminadores\frmInseminadoresIngreso.designer.vb">
+      <DependentUpon>frmInseminadoresIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Inseminadores\frmInseminadoresIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Patologias\frmPatologias.designer.vb">
+      <DependentUpon>frmPatologias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Patologias\frmPatologias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Patologias\frmPatologiasIngreso.designer.vb">
+      <DependentUpon>frmPatologiasIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Patologias\frmPatologiasIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Razas\frmRazas.designer.vb">
+      <DependentUpon>frmRazas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Razas\frmRazas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Razas\frmRazasIngreso.designer.vb">
+      <DependentUpon>frmRazasIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Razas\frmRazasIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Toros\frmToros.designer.vb">
+      <DependentUpon>frmToros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Toros\frmToros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Toros\frmTorosIngreso.designer.vb">
+      <DependentUpon>frmTorosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Toros\frmTorosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioDeCategoria.Designer.vb">
+      <DependentUpon>frmCambioDeCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioDeCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioDeCategoriasIngreso.Designer.vb">
+      <DependentUpon>frmCambioDeCategoriasIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioDeCategoriasIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio Estado Productivo\frmCambioEsProductivoIngreso.Designer.vb">
+      <DependentUpon>frmCambioEsProductivoIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio Estado Productivo\frmCambioEsProductivoIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio Estado Productivo\frmCambioEsProductivo.Designer.vb">
+      <DependentUpon>frmCambioEsProductivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cambio Estado Productivo\frmCambioEsProductivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Compras\frmComprasImportar.Designer.vb">
+      <DependentUpon>frmComprasImportar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Compras\frmComprasImportar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheroDetalle.Designer.vb">
+      <DependentUpon>frmControlLecheroDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheroDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheroIngreso.designer.vb">
+      <DependentUpon>frmControlLecheroIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheroIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLechero.designer.vb">
+      <DependentUpon>frmControlLechero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLechero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Genetica\frmGenetica.Designer.vb">
+      <DependentUpon>frmGenetica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Genetica\frmGenetica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaIngreso.Designer.vb">
+      <DependentUpon>frmGeneticaIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaIngresoManual.Designer.vb">
+      <DependentUpon>frmGeneticaIngresoManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaIngresoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaPorcentajes.Designer.vb">
+      <DependentUpon>frmGeneticaPorcentajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaPorcentajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Muertes\frmCausaMuerte.Designer.vb">
+      <DependentUpon>frmCausaMuerte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Muertes\frmCausaMuerte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Muertes\frmMuertesModificacionEliminacion.Designer.vb">
+      <DependentUpon>frmMuertesModificacionEliminacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Muertes\frmMuertesModificacionEliminacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpaciones.designer.vb">
+      <DependentUpon>frmPalpaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmInducciones.Designer.vb">
+      <DependentUpon>frmInducciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmInducciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartosInducciones.Designer.vb">
+      <DependentUpon>frmPartosInducciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartosInducciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartosInduccionesResumen.Designer.vb">
+      <DependentUpon>frmPartosInduccionesResumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartosInduccionesResumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartosAnalisisDiios.Designer.vb">
+      <DependentUpon>frptPartosAnalisisDiios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartosAnalisisDiios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartosDetalle.Designer.vb">
+      <DependentUpon>frptPartosDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartosDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartosEliminados.Designer.vb">
+      <DependentUpon>frptPartosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartosSAG.Designer.vb">
+      <DependentUpon>frptPartosSAG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartosSAG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartos.Designer.vb">
+      <DependentUpon>frptPartos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frptPartos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimales.Designer.vb">
+      <DependentUpon>frmPrendaAnimales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimalesPorCentros.Designer.vb">
+      <DependentUpon>frmPrendaAnimalesPorCentros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimalesPorCentros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimalesDiios.Designer.vb">
+      <DependentUpon>frmPrendaAnimalesDiios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimalesDiios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\RevPostPartos\frmBuscarDiios.Designer.vb">
+      <DependentUpon>frmBuscarDiios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\RevPostPartos\frmBuscarDiios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojeras.Designer.vb">
+      <DependentUpon>FrmCojeras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojeras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojerasDetalle.Designer.vb">
+      <DependentUpon>FrmCojerasDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojerasDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojerasIngreso.Designer.vb">
+      <DependentUpon>FrmCojerasIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojerasIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Desechos\frmDesechosIngreso.Designer.vb">
+      <DependentUpon>frmDesechosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Desechos\frmDesechosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitis.Designer.vb">
+      <DependentUpon>FrmMastitis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmContraMuestrasIngreso.Designer.vb">
+      <DependentUpon>frmContraMuestrasIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmContraMuestrasIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmContraMuestras.Designer.vb">
+      <DependentUpon>frmContraMuestras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmContraMuestras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmMuestreosResultado.Designer.vb">
+      <DependentUpon>frmMuestreosResultado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmMuestreosResultado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientos.Designer.vb">
+      <DependentUpon>frmOtrosTratamientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientosDetalle.Designer.vb">
+      <DependentUpon>frmOtrosTratamientosDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientosDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientosIngreso.Designer.vb">
+      <DependentUpon>frmOtrosTratamientosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmIngresoOrdenaTratamiento.Designer.vb">
+      <DependentUpon>frmIngresoOrdenaTratamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmIngresoOrdenaTratamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmIngresoTratamientos.Designer.vb">
+      <DependentUpon>frmIngresoTratamientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmIngresoTratamientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmListadoTratamientos.Designer.vb">
+      <DependentUpon>frmListadoTratamientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmListadoTratamientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoDetalleTratamiento.Designer.vb">
+      <DependentUpon>frmPabcoDetalleTratamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoDetalleTratamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoLiberarLeche.Designer.vb">
+      <DependentUpon>frmPabcoLiberarLeche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoLiberarLeche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoLotes.Designer.vb">
+      <DependentUpon>frmPabcoLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmSaludAnimal.Designer.vb">
+      <DependentUpon>frmSaludAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmSaludAnimal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmTratamientosEnCurso.Designer.vb">
+      <DependentUpon>frmTratamientosEnCurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmTratamientosEnCurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmTratamientosLote.Designer.vb">
+      <DependentUpon>frmTratamientosLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Pabco\frmTratamientosLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunas.Designer.vb">
+      <DependentUpon>frmVacunas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasIngresoVacunacion.Designer.vb">
+      <DependentUpon>frmVacunasIngresoVacunacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasIngresoVacunacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasListado.Designer.vb">
+      <DependentUpon>frmVacunasListado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasListado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasNuevaVacuna.Designer.vb">
+      <DependentUpon>frmVacunasNuevaVacuna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasNuevaVacuna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasSesiones.Designer.vb">
+      <DependentUpon>frmVacunasSesiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasSesiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Sincronizacion\frmSincronizacionLista.Designer.vb">
+      <DependentUpon>frmSincronizacionLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Sincronizacion\frmSincronizacionLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosRecepcionMasiva.designer.vb">
+      <DependentUpon>frmTrasladosRecepcionMasiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosRecepcionMasiva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmRptDocumentoDBNET.Designer.vb">
+      <DependentUpon>frmRptDocumentoDBNET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmRptDocumentoDBNET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasCambioCliente.Designer.vb">
+      <DependentUpon>frmVentasCambioCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasCambioCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasObservacion.Designer.vb">
+      <DependentUpon>frmVentasObservacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasObservacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasRequerimiento.Designer.vb">
+      <DependentUpon>frmVentasRequerimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasRequerimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasRequerimientoIngreso.Designer.vb">
+      <DependentUpon>frmVentasRequerimientoIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasRequerimientoIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasTipoCausa.Designer.vb">
+      <DependentUpon>frmVentasTipoCausa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasTipoCausa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\Reportes\frptOrdenVenta.Designer.vb">
+      <DependentUpon>frptOrdenVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\Reportes\frptOrdenVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodega.Designer.vb">
+      <DependentUpon>frmBodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaCierreItems.Designer.vb">
+      <DependentUpon>frmBodegaCierreItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaCierreItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaCrearCierre.Designer.vb">
+      <DependentUpon>frmBodegaCrearCierre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaCrearCierre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaListadoArticulos.Designer.vb">
+      <DependentUpon>frmBodegaListadoArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaListadoArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaIngresoTraslado.Designer.vb">
+      <DependentUpon>frmBodegaIngresoTraslado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaIngresoTraslado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaTrasladoResolucion.Designer.vb">
+      <DependentUpon>frmBodegaTrasladoResolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaTrasladoResolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frptBodegaCierreMes.Designer.vb">
+      <DependentUpon>frptBodegaCierreMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frptBodegaCierreMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\CalidadLeche\CalidadLecheIngreso3.Designer.vb">
+      <DependentUpon>CalidadLecheIngreso3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\CalidadLeche\CalidadLecheIngreso3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\CalidadLeche\frmCalidadLeche.Designer.vb">
+      <DependentUpon>frmCalidadLeche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\CalidadLeche\frmCalidadLeche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmConfirmaConsumo.Designer.vb">
+      <DependentUpon>frmConfirmaConsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmConfirmaConsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaIngresoConsumo.Designer.vb">
+      <DependentUpon>frmBodegaIngresoConsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Bodega\frmBodegaIngresoConsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmIngresoDiario.Designer.vb">
+      <DependentUpon>frmIngresoDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmIngresoDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmIngresoObservacion.Designer.vb">
+      <DependentUpon>frmIngresoObservacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmIngresoObservacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmPurinesSeleccionPotreros.Designer.vb">
+      <DependentUpon>frmPurinesSeleccionPotreros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmPurinesSeleccionPotreros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmAdminCierresTarja.Designer.vb">
+      <DependentUpon>frmAdminCierresTarja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmAdminCierresTarja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmTrasladoPersonal.Designer.vb">
+      <DependentUpon>frmTrasladoPersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmTrasladoPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmVBTarja.Designer.vb">
+      <DependentUpon>frmVBTarja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\frmVBTarja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\Reportes\frptCierredBodega.Designer.vb">
+      <DependentUpon>frptCierredBodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\Reportes\frptCierredBodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\Reportes\frptLechePlantaMes.Designer.vb">
+      <DependentUpon>frptLechePlantaMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\Reportes\frptLechePlantaMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Crianza\FrmCrianza.Designer.vb">
+      <DependentUpon>FrmCrianza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Crianza\FrmCrianza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Crianza\FrmCrianzaImportacion.Designer.vb">
+      <DependentUpon>FrmCrianzaImportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Crianza\FrmCrianzaImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminAsignaciones.Designer.vb">
+      <DependentUpon>frmAdminAsignaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminAsignaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosAsignacion.Designer.vb">
+      <DependentUpon>frmAdminDiiosAsignacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosAsignacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiios.designer.vb">
+      <DependentUpon>frmAdminDiios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosEntrega.designer.vb">
+      <DependentUpon>frmAdminDiiosEntrega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosEntrega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosIngreso.designer.vb">
+      <DependentUpon>frmAdminDiiosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de DIIOs\frmCambioDeDiios.Designer.vb">
+      <DependentUpon>frmCambioDeDiios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de DIIOs\frmCambioDeDiios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de DIIOs\frmCambioDeDiiosIngreso.Designer.vb">
+      <DependentUpon>frmCambioDeDiiosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Cambio de DIIOs\frmCambioDeDiiosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustes.designer.vb">
+      <DependentUpon>frmAjustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngreso.designer.vb">
+      <DependentUpon>frmAjustesIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoDIIO.designer.vb">
+      <DependentUpon>frmAjustesIngresoDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Celos\frmCelos.designer.vb">
+      <DependentUpon>frmCelos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Celos\frmCelos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Celos\frmCelosIngreso.designer.vb">
+      <DependentUpon>frmCelosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Celos\frmCelosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Celos\frmCelosPorCentros.designer.vb">
+      <DependentUpon>frmCelosPorCentros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Celos\frmCelosPorCentros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmColumnas.Designer.vb">
+      <DependentUpon>frmColumnas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmColumnas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaDIIO\frmConsultaDIIO.designer.vb">
+      <DependentUpon>frmConsultaDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaDIIO\frmConsultaDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneral.designer.vb">
+      <DependentUpon>frmConsultaGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneralCampos.Designer.vb">
+      <DependentUpon>frmConsultaGeneralCampos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneralCampos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneralCompara.Designer.vb">
+      <DependentUpon>frmConsultaGeneralCompara.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneralCompara.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneralDIIOs\frmConsultaGeneralDIIOs.designer.vb">
+      <DependentUpon>frmConsultaGeneralDIIOs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\ConsultaGeneralDIIOs\frmConsultaGeneralDIIOs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Compras\frmCompras.Designer.vb">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Compras\frmCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Compras\frmComprasIngreso.Designer.vb">
+      <DependentUpon>frmComprasIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Compras\frmComprasIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Compras\frmComprasIngresoDIIO.designer.vb">
+      <DependentUpon>frmComprasIngresoDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Compras\frmComprasIngresoDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertas.Designer.vb">
+      <DependentUpon>frmCubiertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasIngreso.Designer.vb">
+      <DependentUpon>frmCubiertasIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\PlanillaCubiertas\frmCubiertasPlanilla.Designer.vb">
+      <DependentUpon>frmCubiertasPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\PlanillaCubiertas\frmCubiertasPlanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasPorCentros.designer.vb">
+      <DependentUpon>frmCubiertasPorCentros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasPorCentros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasToro.Designer.vb">
+      <DependentUpon>frmCubiertasToro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasToro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Pago Cubiertas\frmPagoCubiertas.designer.vb">
+      <DependentUpon>frmPagoCubiertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Pago Cubiertas\frmPagoCubiertas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Decomisos\FrmDecomisos.designer.vb">
+      <DependentUpon>FrmDecomisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Decomisos\FrmDecomisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Decomisos\FrmDecomisosDetalle.designer.vb">
+      <DependentUpon>FrmDecomisosDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Decomisos\FrmDecomisosDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Decomisos\FrmDecomisosIngreso.Designer.vb">
+      <DependentUpon>FrmDecomisosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Decomisos\FrmDecomisosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosis.designer.vb">
+      <DependentUpon>frmAdminDosis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisIngreso.designer.vb">
+      <DependentUpon>frmAdminDosisIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmCambioFecha.designer.vb">
+      <DependentUpon>frmCambioFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmCambioFecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATF.designer.vb">
+      <DependentUpon>frmIATF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATFIngreso.designer.vb">
+      <DependentUpon>frmIATFIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATFIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATFPorCentros.designer.vb">
+      <DependentUpon>frmIATFPorCentros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATFPorCentros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\FrmMenu_perfiles.designer.vb">
+      <DependentUpon>FrmMenu_perfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\FrmMenu_perfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\FrmMenu_perfiles_nuevo.designer.vb">
+      <DependentUpon>FrmMenu_perfiles_nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\FrmMenu_perfiles_nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal.designer.vb">
+      <DependentUpon>frmMenu_principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal_Modifica.designer.vb">
+      <DependentUpon>frmMenu_principal_Modifica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal_Modifica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal_nuevo.designer.vb">
+      <DependentUpon>frmMenu_principal_nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal_nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\PerfilesUsuarios\FrmPerfiles.designer.vb">
+      <DependentUpon>FrmPerfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\PerfilesUsuarios\FrmPerfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\PerfilesUsuarios\frmPerfiles_Modificar.designer.vb">
+      <DependentUpon>frmPerfiles_Modificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\PerfilesUsuarios\frmPerfiles_Modificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\PerfilesUsuarios\FrmPerfiles_Nuevo.designer.vb">
+      <DependentUpon>FrmPerfiles_Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\PerfilesUsuarios\FrmPerfiles_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuarios.designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuarios_Editar.designer.vb">
+      <DependentUpon>frmUsuarios_Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\Usuarios\frmUsuarios_Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitisDetalle.Designer.vb">
+      <DependentUpon>FrmMastitisDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitisDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitisIngreso.Designer.vb">
+      <DependentUpon>FrmMastitisIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitisIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Muertes\frmMuertes.designer.vb">
+      <DependentUpon>frmMuertes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Muertes\frmMuertes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Muertes\frmMuertesIngreso.designer.vb">
+      <DependentUpon>frmMuertesIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Muertes\frmMuertesIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentas2.Designer.vb">
+      <DependentUpon>frmVentas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentas2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentas2Ingreso.Designer.vb">
+      <DependentUpon>frmVentas2Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentas2Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentas2IngresoDIIO.designer.vb">
+      <DependentUpon>frmVentas2IngresoDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentas2IngresoDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasCausa.Designer.vb">
+      <DependentUpon>frmVentasCausa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Ventas\frmVentasCausa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\fmFuncionarios.Designer.vb">
+      <DependentUpon>fmFuncionarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\LecheV2\fmFuncionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\FrmLecheAsistenciaIngreso.Designer.vb">
+      <DependentUpon>FrmLecheAsistenciaIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\FrmLecheAsistenciaIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\FrmLecheClientes.Designer.vb">
+      <DependentUpon>FrmLecheClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\FrmLecheClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\FrmLecheClientesImportacion.Designer.vb">
+      <DependentUpon>FrmLecheClientesImportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\FrmLecheClientesImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\FrmMuestreos.Designer.vb">
+      <DependentUpon>FrmMuestreos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\FrmMuestreos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\FrmMuestreosIngreso.Designer.vb">
+      <DependentUpon>FrmMuestreosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Salud\Muestreos\FrmMuestreosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesImportacion.designer.vb">
+      <DependentUpon>frmPalpacionesImportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartos.designer.vb">
+      <DependentUpon>frmPartos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartosIngreso.Designer.vb">
+      <DependentUpon>frmPartosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartosIngresoDiio.Designer.vb">
+      <DependentUpon>frmPartosIngresoDiio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Partos\frmPartosIngresoDiio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartos.designer.vb">
+      <DependentUpon>frmRevPostPartos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartosIngreso.designer.vb">
+      <DependentUpon>frmRevPostPartosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartosIngresoDIIO.designer.vb">
+      <DependentUpon>frmRevPostPartosIngresoDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartosIngresoDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Secado\frmSecadosIngresoDIIO.designer.vb">
+      <DependentUpon>frmSecadosIngresoDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Secado\frmSecadosIngresoDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Secado\frmSecados.designer.vb">
+      <DependentUpon>frmSecados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Secado\frmSecados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Secado\frmSecadosIngreso.designer.vb">
+      <DependentUpon>frmSecadosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Secado\frmSecadosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\Reportes\frptTarjaElectronica.Designer.vb">
+      <DependentUpon>frptTarjaElectronica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Leche\Reportes\frptTarjaElectronica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\fnMuestraLecheCargaExcel.vb" />
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLeche.Designer.vb">
+      <DependentUpon>frmMuestraLeche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLeche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheEnvio.Designer.vb">
+      <DependentUpon>frmMuestraLecheEnvio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheEnvio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheExcel.Designer.vb">
+      <DependentUpon>frmMuestraLecheExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheIngresoManual.Designer.vb">
+      <DependentUpon>frmMuestraLecheIngresoManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheIngresoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLechePrint.Designer.vb">
+      <DependentUpon>frmMuestraLechePrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLechePrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResultado.Designer.vb">
+      <DependentUpon>frmMuestraLecheResultado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResultado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResumen.Designer.vb">
+      <DependentUpon>frmMuestraLecheResumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResumenDetalle.Designer.vb">
+      <DependentUpon>frmMuestraLecheResumenDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResumenDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCS.Designer.vb">
+      <DependentUpon>FrmRecuentoCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSDetalle.Designer.vb">
+      <DependentUpon>FrmRecuentoCSDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSImportacion.Designer.vb">
+      <DependentUpon>FrmRecuentoCSImportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSIngreso.Designer.vb">
+      <DependentUpon>FrmRecuentoCSIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Balance\frmBalanceForrajero.Designer.vb">
+      <DependentUpon>frmBalanceForrajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Balance\frmBalanceForrajero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Balance\frmBalanceIngreso.Designer.vb">
+      <DependentUpon>frmBalanceIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Balance\frmBalanceIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmFertilizante.Designer.vb">
+      <DependentUpon>frmFertilizante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmFertilizante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmIngresoFertilizante.Designer.vb">
+      <DependentUpon>frmIngresoFertilizante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmIngresoFertilizante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmIngresoUrea.Designer.vb">
+      <DependentUpon>frmIngresoUrea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmIngresoUrea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmMedicionPastoIngreso.Designer.vb">
+      <DependentUpon>frmMedicionPastoIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmMedicionPastoIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmPotreros.Designer.vb">
+      <DependentUpon>frmPotreros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmPotreros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmPotrerosIngreso.Designer.vb">
+      <DependentUpon>frmPotrerosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmPotrerosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmRotacionPotreros.Designer.vb">
+      <DependentUpon>frmRotacionPotreros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmRotacionPotreros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmRotacionPotrerosIngreso.Designer.vb">
+      <DependentUpon>frmRotacionPotrerosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\frmRotacionPotrerosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Productos Urea\frmProductosUreaIngreso.Designer.vb">
+      <DependentUpon>frmProductosUreaIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Productos Urea\frmProductosUreaIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Productos Urea\frmProductosUreaIngresoDetalle.Designer.vb">
+      <DependentUpon>frmProductosUreaIngresoDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Productos Urea\frmProductosUreaIngresoDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Silos\frmSilos.Designer.vb">
+      <DependentUpon>frmSilos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Silos\frmSilos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Silos\frmSilosConfeccionInterna.Designer.vb">
+      <DependentUpon>frmSilosConfeccionInterna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Silos\frmSilosConfeccionInterna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Silos\frmSilosModificar.Designer.vb">
+      <DependentUpon>frmSilosModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Silos\frmSilosModificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Silos\frmSilosObs.Designer.vb">
+      <DependentUpon>frmSilosObs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Praderas\Silos\frmSilosObs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheExcel.Designer.vb">
+      <DependentUpon>frmControlLecheExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\frmActualizaciones.Designer.vb">
+      <DependentUpon>frmActualizaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\frmActualizaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\frmResumenes.Designer.vb">
+      <DependentUpon>frmResumenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\frmResumenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Manuales.Designer.vb">
+      <DependentUpon>Manuales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Manuales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANUKA_PRODDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MANUKA_PRODDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MNK_DS_ResumenCierre.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MNK_DS_ResumenCierre.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PlanillaCubiertas\frmRptPlanillaCubiertas.Designer.vb">
+      <DependentUpon>frmRptPlanillaCubiertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PlanillaCubiertas\frmRptPlanillaCubiertas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\PlanillaCubiertas\MNKPROD_DS_PlanillaCubiertas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MNKPROD_DS_PlanillaCubiertas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\TNR\frmTNR.Designer.vb">
+      <DependentUpon>frmTNR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Cubiertas\TNR\frmTNR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\Reportes\frmRptTraslado.Designer.vb">
+      <DependentUpon>frmRptTraslado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\Reportes\frmRptTraslado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\Reportes\frmRptTrasladoPrev.Designer.vb">
+      <DependentUpon>frmRptTrasladoPrev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\Reportes\frmRptTrasladoPrev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\frmTraslados.designer.vb">
+      <DependentUpon>frmTraslados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\frmTraslados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosIngreso.designer.vb">
+      <DependentUpon>frmTrasladosIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosIngresoDIIO.designer.vb">
+      <DependentUpon>frmTrasladosIngresoDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosIngresoDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmMensajesOLD.Designer.vb">
+      <DependentUpon>frmMensajesOLD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmMensajesOLD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmTableroGanado.designer.vb">
+      <DependentUpon>frmTableroGanado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Herramientas\frmTableroGanado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\TNR\MNKPROD_DS_TNR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MNKPROD_DS_TNR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\TNR\MNKPROD_DS_TNR.vb">
+      <DependentUpon>MNKPROD_DS_TNR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaCelos\frmRptConsultaCelos.Designer.vb">
+      <DependentUpon>frmRptConsultaCelos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaCelos\frmRptConsultaCelos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaCelos\MANUKA_PROD_DSConsultaCelos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MANUKA_PROD_DSConsultaCelos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaGeneral\frmRptConsultaGeneral.designer.vb">
+      <DependentUpon>frmRptConsultaGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaGeneral\frmRptConsultaGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\AnalisisMasa\frmConsultaGraficos.Designer.vb">
+      <DependentUpon>frmConsultaGraficos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Consultas\AnalisisMasa\frmConsultaGraficos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesIngreso.designer.vb">
+      <DependentUpon>frmPalpacionesIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesIngresoDIIO.Designer.vb">
+      <DependentUpon>frmPalpacionesIngresoDIIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesIngresoDIIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\frmMAIN.Designer.vb">
+      <DependentUpon>frmMAIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\frmMAIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ConsultaGeneral\MANUKA_PROD_DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MANUKA_PROD_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ConsultaGeneral\MANUKA_PROD_DataSet.vb">
+      <DependentUpon>MANUKA_PROD_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\TNR\frmRptTNR.Designer.vb">
+      <DependentUpon>frmRptTNR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\TNR\frmRptTNR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service References\wsPRODgetPDF64\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\wsTESTgetPDF64\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="_Funciones\API.vb" />
+    <Compile Include="_Funciones\BuscaCodigos.vb" />
+    <Compile Include="_Funciones\CaseDatatable.vb" />
+    <Compile Include="_Funciones\Configuracion.vb" />
+    <Compile Include="_Funciones\fnAuditoriaLector.vb" />
+    <Compile Include="_Funciones\fnAuditoriaLectorDatos.vb" />
+    <Compile Include="_Funciones\fnbalance.vb" />
+    <Compile Include="_Funciones\FnBalanceForrajero.vb" />
+    <Compile Include="_Funciones\fnBalanceIngresoDiario.vb" />
+    <Compile Include="_Funciones\fnCambioCategorias.vb" />
+    <Compile Include="_Funciones\fnConteoGallagher.vb" />
+    <Compile Include="_Funciones\fnConteoLVtoDatatable.vb" />
+    <Compile Include="_Funciones\fnControlLechero.vb" />
+    <Compile Include="_Funciones\fnCrianzaPesos.vb" />
+    <Compile Include="_Funciones\fnGrabarCierreBodega.vb" />
+    <Compile Include="_Funciones\fnGrabarSilos.vb" />
+    <Compile Include="_Funciones\fnInduccionesGrabar.vb" />
+    <Compile Include="_Funciones\fnMuertesIngreso.vb" />
+    <Compile Include="_Funciones\fnMuestraLecheEnvioResultado.vb" />
+    <Compile Include="_Funciones\fnMuestraLechePndResultado.vb" />
+    <Compile Include="_Funciones\fnMuestraManual.vb" />
+    <Compile Include="_Funciones\fnPabcoDetalle.vb" />
+    <Compile Include="_Funciones\fnTrasladosCargaMasiva.vb" />
+    <Compile Include="_Funciones\fnVacuna.vb" />
+    <Compile Include="_Funciones\fnVacunados.vb" />
+    <Compile Include="_Funciones\fnValidaCIDR.vb" />
+    <Compile Include="_Funciones\frInducciones.vb" />
+    <Compile Include="_Funciones\General.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="_Funciones\INV_GrabarMovimientoBodega.vb" />
+    <Compile Include="_Funciones\ListViewComparer.vb" />
+    <Compile Include="_Funciones\ListViewOrdenarColumnas.vb" />
+    <Compile Include="_Funciones\LlenaCombos.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\Baston\frmAlarmas.resx">
+      <DependentUpon>frmAlarmas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Baston\frmAlarmasMensaje.resx">
+      <DependentUpon>frmAlarmasMensaje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Baston\frmBastonV2.resx">
+      <DependentUpon>frmBastonV2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Baston\frmLeerDispositivoV3.resx">
+      <DependentUpon>frmLeerDispositivoV3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmCasa.resx">
+      <DependentUpon>frmCasa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmCasa_Editar.resx">
+      <DependentUpon>frmCasa_Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmCasa_Nuevo.resx">
+      <DependentUpon>frmCasa_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmClasificacionSitio.resx">
+      <DependentUpon>frmClasificacionSitio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmClasificacionSitio_Editar.resx">
+      <DependentUpon>frmClasificacionSitio_Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmClasificacionSitio_Nuevo.resx">
+      <DependentUpon>frmClasificacionSitio_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmConsumoLuzReporte.resx">
+      <DependentUpon>frmConsumoLuzReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmConsumoLuz_Editar.resx">
+      <DependentUpon>frmConsumoLuz_Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmConsumoLuz_Ingreso.resx">
+      <DependentUpon>frmConsumoLuz_Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmLuzMenu.resx">
+      <DependentUpon>frmLuzMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmParametros.resx">
+      <DependentUpon>frmParametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmParametros_Editar.resx">
+      <DependentUpon>frmParametros_Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmPoblacion.resx">
+      <DependentUpon>frmPoblacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmPoblacion_Editar.resx">
+      <DependentUpon>frmPoblacion_Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmPoblacion_Nuevo.resx">
+      <DependentUpon>frmPoblacion_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmRelacion.resx">
+      <DependentUpon>frmRelacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmRelacion_Editar.resx">
+      <DependentUpon>frmRelacion_Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsumoLuz\frmRelacion_Nuevo.resx">
+      <DependentUpon>frmRelacion_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Herramientas\frmMantencion.resx">
+      <DependentUpon>frmMantencion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Herramientas\SolicitudesSAMM.resx">
+      <DependentUpon>SolicitudesSAMM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Bodegas\frmBodegas_AsignarUsuarios.resx">
+      <DependentUpon>frmBodegas_AsignarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\CuentasContables\frmCuentasContables.resx">
+      <DependentUpon>frmCuentasContables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\CuentasContables\frmCuentasContablesAgregar.resx">
+      <DependentUpon>frmCuentasContablesAgregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Estanques\frmEstanques.resx">
+      <DependentUpon>frmEstanques.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Estanques\frmEstanquesIngreso.resx">
+      <DependentUpon>frmEstanquesIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Productos\frmProductosConcentrado.resx">
+      <DependentUpon>frmProductosConcentrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Productos\frmProductosConcentradoDetalle.resx">
+      <DependentUpon>frmProductosConcentradoDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Usuarios\frmUsuariosCambioContrasena.resx">
+      <DependentUpon>frmUsuariosCambioContrasena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Usuarios\frmUsuarios_AsignacionCentros.resx">
+      <DependentUpon>frmUsuarios_AsignacionCentros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Usuarios\frmUsuarios_Nuevo.resx">
+      <DependentUpon>frmUsuarios_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Usuarios\frmUsuario_RecuperarPass.resx">
+      <DependentUpon>frmUsuario_RecuperarPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Veterinarios\frmVeterinarios.resx">
+      <DependentUpon>frmVeterinarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Veterinarios\frmVeterinariosCreacion.resx">
+      <DependentUpon>frmVeterinariosCreacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Carga\frmCarga.resx">
+      <DependentUpon>frmCarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Carga\frmCargaBI.resx">
+      <DependentUpon>frmCargaBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Cierre\CierresTemporada\frmCierresTemporada.resx">
+      <DependentUpon>frmCierresTemporada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Cierre\CierresTemporada\frmCierresTemporadaIngreso.resx">
+      <DependentUpon>frmCierresTemporadaIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Cierre\frmCierresDetalle.resx">
+      <DependentUpon>frmCierresDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Cierre\frmCierresIngreso.resx">
+      <DependentUpon>frmCierresIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Cierre\frmComparaBaston.resx">
+      <DependentUpon>frmComparaBaston.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Cierre\Reportes\frptCierreMensualGanado.resx">
+      <DependentUpon>frptCierreMensualGanado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\ConteoReportes\frmConteoAnimales.resx">
+      <DependentUpon>frmConteoAnimales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\ConteoReportes\frmDetalleConteo.resx">
+      <DependentUpon>frmDetalleConteo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Conteo\frmBastonV2Conteo.resx">
+      <DependentUpon>frmBastonV2Conteo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Conteo\frmComparaBastonConteo.resx">
+      <DependentUpon>frmComparaBastonConteo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Conteo\frmDiasBastoneo.resx">
+      <DependentUpon>frmDiasBastoneo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Conteo\frptConteoAnimales.resx">
+      <DependentUpon>frptConteoAnimales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Crianza\frmGanadoInmunidad.resx">
+      <DependentUpon>frmGanadoInmunidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Crianza\frmGanadoInmunidadIngreso.resx">
+      <DependentUpon>frmGanadoInmunidadIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosReasignar.resx">
+      <DependentUpon>frmAdminDiiosReasignar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoInventarioDIIO.resx">
+      <DependentUpon>frmAjustesIngresoInventarioDIIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoTipoAjuste.resx">
+      <DependentUpon>frmAjustesIngresoTipoAjuste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Medicamentos\frmMedicamentos.resx">
+      <DependentUpon>frmMedicamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Medicamentos\frmMedicamentosIngreso.resx">
+      <DependentUpon>frmMedicamentosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Tipo Desechos\frmTipoDesechos.resx">
+      <DependentUpon>frmTipoDesechos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Tipo Desechos\frmTipoDesechosNuevo.resx">
+      <DependentUpon>frmTipoDesechosNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioCategoriaCargaMasiva.resx">
+      <DependentUpon>frmCambioCategoriaCargaMasiva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazasCodigos.resx">
+      <DependentUpon>frmCambioRazasCodigos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazasIngresar.resx">
+      <DependentUpon>frmCambioRazasIngresar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Cambio de Razas\frmCambioRazas.resx">
+      <DependentUpon>frmCambioRazas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisDevolucion.resx">
+      <DependentUpon>frmAdminDosisDevolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisEntrega.resx">
+      <DependentUpon>frmAdminDosisEntrega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Causas\frmCausas.resx">
+      <DependentUpon>frmCausas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Causas\frmCausas_Agregar.resx">
+      <DependentUpon>frmCausas_Agregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Farmacos\frmFarmacos.resx">
+      <DependentUpon>frmFarmacos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Farmacos\frmFarmacosIngreso.resx">
+      <DependentUpon>frmFarmacosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Inseminadores\frmInseminadores.resx">
+      <DependentUpon>frmInseminadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Inseminadores\frmInseminadoresIngreso.resx">
+      <DependentUpon>frmInseminadoresIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Patologias\frmPatologias.resx">
+      <DependentUpon>frmPatologias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Patologias\frmPatologiasIngreso.resx">
+      <DependentUpon>frmPatologiasIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Razas\frmRazas.resx">
+      <DependentUpon>frmRazas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Razas\frmRazasIngreso.resx">
+      <DependentUpon>frmRazasIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Toros\frmToros.resx">
+      <DependentUpon>frmToros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Mantenedores\Toros\frmTorosIngreso.resx">
+      <DependentUpon>frmTorosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioDeCategoria.resx">
+      <DependentUpon>frmCambioDeCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cambio de Categorias\frmCambioDeCategoriasIngreso.resx">
+      <DependentUpon>frmCambioDeCategoriasIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cambio Estado Productivo\frmCambioEsProductivoIngreso.resx">
+      <DependentUpon>frmCambioEsProductivoIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cambio Estado Productivo\frmCambioEsProductivo.resx">
+      <DependentUpon>frmCambioEsProductivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Compras\frmComprasImportar.resx">
+      <DependentUpon>frmComprasImportar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheExcel.resx">
+      <DependentUpon>frmControlLecheExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheroDetalle.resx">
+      <DependentUpon>frmControlLecheroDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLecheroIngreso.resx">
+      <DependentUpon>frmControlLecheroIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Control Lechero\frmControlLechero.resx">
+      <DependentUpon>frmControlLechero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Genetica\frmGenetica.resx">
+      <DependentUpon>frmGenetica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaIngreso.resx">
+      <DependentUpon>frmGeneticaIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaIngresoManual.resx">
+      <DependentUpon>frmGeneticaIngresoManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Genetica\frmGeneticaPorcentajes.resx">
+      <DependentUpon>frmGeneticaPorcentajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Muertes\frmCausaMuerte.resx">
+      <DependentUpon>frmCausaMuerte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Muertes\frmMuertesModificacionEliminacion.resx">
+      <DependentUpon>frmMuertesModificacionEliminacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpaciones.resx">
+      <DependentUpon>frmPalpaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frmInducciones.resx">
+      <DependentUpon>frmInducciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frmPartosInducciones.resx">
+      <DependentUpon>frmPartosInducciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frmPartosInduccionesResumen.resx">
+      <DependentUpon>frmPartosInduccionesResumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frptPartosAnalisisDiios.resx">
+      <DependentUpon>frptPartosAnalisisDiios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frptPartosDetalle.resx">
+      <DependentUpon>frptPartosDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frptPartosEliminados.resx">
+      <DependentUpon>frptPartosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frptPartosSAG.resx">
+      <DependentUpon>frptPartosSAG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frptPartos.resx">
+      <DependentUpon>frptPartos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimales.resx">
+      <DependentUpon>frmPrendaAnimales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimalesPorCentros.resx">
+      <DependentUpon>frmPrendaAnimalesPorCentros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Prendas\frmPrendaAnimalesDiios.resx">
+      <DependentUpon>frmPrendaAnimalesDiios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\RevPostPartos\frmBuscarDiios.resx">
+      <DependentUpon>frmBuscarDiios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojeras.resx">
+      <DependentUpon>FrmCojeras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojerasDetalle.resx">
+      <DependentUpon>FrmCojerasDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Cojeras\FrmCojerasIngreso.resx">
+      <DependentUpon>FrmCojerasIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Desechos\frmDesechosIngreso.resx">
+      <DependentUpon>frmDesechosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitis.resx">
+      <DependentUpon>FrmMastitis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmContraMuestras.resx">
+      <DependentUpon>frmContraMuestras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmContraMuestrasIngreso.resx">
+      <DependentUpon>frmContraMuestrasIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Muestreos\frmMuestreosResultado.resx">
+      <DependentUpon>frmMuestreosResultado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientos.resx">
+      <DependentUpon>frmOtrosTratamientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientosDetalle.resx">
+      <DependentUpon>frmOtrosTratamientosDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Otros Tratamientos\frmOtrosTratamientosIngreso.resx">
+      <DependentUpon>frmOtrosTratamientosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmIngresoOrdenaTratamiento.resx">
+      <DependentUpon>frmIngresoOrdenaTratamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmIngresoTratamientos.resx">
+      <DependentUpon>frmIngresoTratamientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmListadoTratamientos.resx">
+      <DependentUpon>frmListadoTratamientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoDetalleTratamiento.resx">
+      <DependentUpon>frmPabcoDetalleTratamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoLiberarLeche.resx">
+      <DependentUpon>frmPabcoLiberarLeche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmPabcoLotes.resx">
+      <DependentUpon>frmPabcoLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmSaludAnimal.resx">
+      <DependentUpon>frmSaludAnimal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmTratamientosEnCurso.resx">
+      <DependentUpon>frmTratamientosEnCurso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Pabco\frmTratamientosLote.resx">
+      <DependentUpon>frmTratamientosLote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunas.resx">
+      <DependentUpon>frmVacunas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasIngresoVacunacion.resx">
+      <DependentUpon>frmVacunasIngresoVacunacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasListado.resx">
+      <DependentUpon>frmVacunasListado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasNuevaVacuna.resx">
+      <DependentUpon>frmVacunasNuevaVacuna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Vacunas\frmVacunasSesiones.resx">
+      <DependentUpon>frmVacunasSesiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\Sincronizacion\frmSincronizacionLista.resx">
+      <DependentUpon>frmSincronizacionLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosRecepcionMasiva.resx">
+      <DependentUpon>frmTrasladosRecepcionMasiva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Herramientas\frmRptDocumentoDBNET.resx">
+      <DependentUpon>frmRptDocumentoDBNET.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentasCambioCliente.resx">
+      <DependentUpon>frmVentasCambioCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentasObservacion.resx">
+      <DependentUpon>frmVentasObservacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentasRequerimiento.resx">
+      <DependentUpon>frmVentasRequerimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentasRequerimientoIngreso.resx">
+      <DependentUpon>frmVentasRequerimientoIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentasTipoCausa.resx">
+      <DependentUpon>frmVentasTipoCausa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\Reportes\frptOrdenVenta.resx">
+      <DependentUpon>frptOrdenVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Bodega\frmBodega.resx">
+      <DependentUpon>frmBodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Bodega\frmBodegaCierreItems.resx">
+      <DependentUpon>frmBodegaCierreItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Bodega\frmBodegaCrearCierre.resx">
+      <DependentUpon>frmBodegaCrearCierre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Bodega\frmBodegaListadoArticulos.resx">
+      <DependentUpon>frmBodegaListadoArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Bodega\frmBodegaIngresoTraslado.resx">
+      <DependentUpon>frmBodegaIngresoTraslado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Bodega\frmBodegaTrasladoResolucion.resx">
+      <DependentUpon>frmBodegaTrasladoResolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Bodega\frptBodegaCierreMes.resx">
+      <DependentUpon>frptBodegaCierreMes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\CalidadLeche\CalidadLecheIngreso3.resx">
+      <DependentUpon>CalidadLecheIngreso3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\CalidadLeche\frmCalidadLeche.resx">
+      <DependentUpon>frmCalidadLeche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\LecheV2\frmConfirmaConsumo.resx">
+      <DependentUpon>frmConfirmaConsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Bodega\frmBodegaIngresoConsumo.resx">
+      <DependentUpon>frmBodegaIngresoConsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\LecheV2\frmIngresoDiario.resx">
+      <DependentUpon>frmIngresoDiario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\LecheV2\frmIngresoObservacion.resx">
+      <DependentUpon>frmIngresoObservacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\LecheV2\frmPurinesSeleccionPotreros.resx">
+      <DependentUpon>frmPurinesSeleccionPotreros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\LecheV2\frmAdminCierresTarja.resx">
+      <DependentUpon>frmAdminCierresTarja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\LecheV2\frmTrasladoPersonal.resx">
+      <DependentUpon>frmTrasladoPersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\LecheV2\frmVBTarja.resx">
+      <DependentUpon>frmVBTarja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Leche\Reportes\frptCierredBodega.resx">
+      <DependentUpon>frptCierredBodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Leche\Reportes\frptLechePlantaMes.resx">
+      <DependentUpon>frptLechePlantaMes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Crianza\FrmCrianza.resx">
+      <DependentUpon>FrmCrianza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Crianza\FrmCrianzaImportacion.resx">
+      <DependentUpon>FrmCrianzaImportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminAsignaciones.resx">
+      <DependentUpon>frmAdminAsignaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiios.resx">
+      <DependentUpon>frmAdminDiios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosAsignacion.resx">
+      <DependentUpon>frmAdminDiiosAsignacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosEntrega.resx">
+      <DependentUpon>frmAdminDiiosEntrega.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\AdministracionDIIOs\frmAdminDiiosIngreso.resx">
+      <DependentUpon>frmAdminDiiosIngreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Cambio de DIIOs\frmCambioDeDiios.resx">
+      <DependentUpon>frmCambioDeDiios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Cambio de DIIOs\frmCambioDeDiiosIngreso.resx">
+      <DependentUpon>frmCambioDeDiiosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustes.resx">
+      <DependentUpon>frmAjustes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngreso.resx">
+      <DependentUpon>frmAjustesIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Ajustes\frmAjustesIngresoDIIO.resx">
+      <DependentUpon>frmAjustesIngresoDIIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Celos\frmCelos.resx">
+      <DependentUpon>frmCelos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Celos\frmCelosIngreso.resx">
+      <DependentUpon>frmCelosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Celos\frmCelosPorCentros.resx">
+      <DependentUpon>frmCelosPorCentros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmColumnas.resx">
+      <DependentUpon>frmColumnas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Consultas\ConsultaDIIO\frmConsultaDIIO.resx">
+      <DependentUpon>frmConsultaDIIO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneral.resx">
+      <DependentUpon>frmConsultaGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneralCampos.resx">
+      <DependentUpon>frmConsultaGeneralCampos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Consultas\ConsultaGeneral\frmConsultaGeneralCompara.resx">
+      <DependentUpon>frmConsultaGeneralCompara.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Consultas\ConsultaGeneralDIIOs\frmConsultaGeneralDIIOs.resx">
+      <DependentUpon>frmConsultaGeneralDIIOs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Compras\frmCompras.resx">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Compras\frmComprasIngreso.resx">
+      <DependentUpon>frmComprasIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Compras\frmComprasIngresoDIIO.resx">
+      <DependentUpon>frmComprasIngresoDIIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertas.resx">
+      <DependentUpon>frmCubiertas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasIngreso.resx">
+      <DependentUpon>frmCubiertasIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\PlanillaCubiertas\frmCubiertasPlanilla.resx">
+      <DependentUpon>frmCubiertasPlanilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasPorCentros.resx">
+      <DependentUpon>frmCubiertasPorCentros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\Cubiertas\frmCubiertasToro.resx">
+      <DependentUpon>frmCubiertasToro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Pago Cubiertas\frmPagoCubiertas.resx">
+      <DependentUpon>frmPagoCubiertas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Decomisos\FrmDecomisos.resx">
+      <DependentUpon>FrmDecomisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Decomisos\FrmDecomisosDetalle.resx">
+      <DependentUpon>FrmDecomisosDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Decomisos\FrmDecomisosIngreso.resx">
+      <DependentUpon>FrmDecomisosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosis.resx">
+      <DependentUpon>frmAdminDosis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Administracion\Dosis\frmAdminDosisIngreso.resx">
+      <DependentUpon>frmAdminDosisIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Herramientas\frmCambioFecha.resx">
+      <DependentUpon>frmCambioFecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATF.resx">
+      <DependentUpon>frmIATF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATFIngreso.resx">
+      <DependentUpon>frmIATFIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\CIDR\frmIATFPorCentros.resx">
+      <DependentUpon>frmIATFPorCentros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\MenuPrincipal\FrmMenu_perfiles.resx">
+      <DependentUpon>FrmMenu_perfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\MenuPrincipal\FrmMenu_perfiles_nuevo.resx">
+      <DependentUpon>FrmMenu_perfiles_nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal.resx">
+      <DependentUpon>frmMenu_principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal_Modifica.resx">
+      <DependentUpon>frmMenu_principal_Modifica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\MenuPrincipal\frmMenu_principal_nuevo.resx">
+      <DependentUpon>frmMenu_principal_nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\PerfilesUsuarios\FrmPerfiles.resx">
+      <DependentUpon>FrmPerfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\PerfilesUsuarios\frmPerfiles_Modificar.resx">
+      <DependentUpon>frmPerfiles_Modificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\PerfilesUsuarios\FrmPerfiles_Nuevo.resx">
+      <DependentUpon>FrmPerfiles_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Usuarios\frmusuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\Usuarios\frmUsuarios_Editar.resx">
+      <DependentUpon>frmUsuarios_Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitisDetalle.resx">
+      <DependentUpon>FrmMastitisDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Mastitis\FrmMastitisIngreso.resx">
+      <DependentUpon>FrmMastitisIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Muertes\frmMuertes.resx">
+      <DependentUpon>frmMuertes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Muertes\frmMuertesIngreso.resx">
+      <DependentUpon>frmMuertesIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentas2.resx">
+      <DependentUpon>frmVentas2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentas2Ingreso.resx">
+      <DependentUpon>frmVentas2Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentas2IngresoDIIO.resx">
+      <DependentUpon>frmVentas2IngresoDIIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Ventas\frmVentasCausa.resx">
+      <DependentUpon>frmVentasCausa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\LecheV2\fmFuncionarios.resx">
+      <DependentUpon>fmFuncionarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Leche\FrmLecheAsistenciaIngreso.resx">
+      <DependentUpon>FrmLecheAsistenciaIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Leche\FrmLecheClientes.resx">
+      <DependentUpon>FrmLecheClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Leche\FrmLecheClientesImportacion.resx">
+      <DependentUpon>FrmLecheClientesImportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Muestreos\FrmMuestreos.resx">
+      <DependentUpon>FrmMuestreos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Salud\Muestreos\FrmMuestreosIngreso.resx">
+      <DependentUpon>FrmMuestreosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesImportacion.resx">
+      <DependentUpon>frmPalpacionesImportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frmPartos.resx">
+      <DependentUpon>frmPartos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frmPartosIngreso.resx">
+      <DependentUpon>frmPartosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Partos\frmPartosIngresoDiio.resx">
+      <DependentUpon>frmPartosIngresoDiio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartos.resx">
+      <DependentUpon>frmRevPostPartos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartosIngreso.resx">
+      <DependentUpon>frmRevPostPartosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\RevPostPartos\frmRevPostPartosIngresoDIIO.resx">
+      <DependentUpon>frmRevPostPartosIngresoDIIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Secado\frmSecadosIngresoDIIO.resx">
+      <DependentUpon>frmSecadosIngresoDIIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Secado\frmSecados.resx">
+      <DependentUpon>frmSecados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Secado\frmSecadosIngreso.resx">
+      <DependentUpon>frmSecadosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Leche\Reportes\frptTarjaElectronica.resx">
+      <DependentUpon>frptTarjaElectronica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLeche.resx">
+      <DependentUpon>frmMuestraLeche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheEnvio.resx">
+      <DependentUpon>frmMuestraLecheEnvio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheExcel.resx">
+      <DependentUpon>frmMuestraLecheExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheIngresoManual.resx">
+      <DependentUpon>frmMuestraLecheIngresoManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLechePrint.resx">
+      <DependentUpon>frmMuestraLechePrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResultado.resx">
+      <DependentUpon>frmMuestraLecheResultado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResumen.resx">
+      <DependentUpon>frmMuestraLecheResumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Muestras de Leche\frmMuestraLecheResumenDetalle.resx">
+      <DependentUpon>frmMuestraLecheResumenDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCS.resx">
+      <DependentUpon>FrmRecuentoCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSDetalle.resx">
+      <DependentUpon>FrmRecuentoCSDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSImportacion.resx">
+      <DependentUpon>FrmRecuentoCSImportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Leche\Recuento CS\FrmRecuentoCSIngreso.resx">
+      <DependentUpon>FrmRecuentoCSIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\Balance\frmBalanceForrajero.resx">
+      <DependentUpon>frmBalanceForrajero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\Balance\frmBalanceIngreso.resx">
+      <DependentUpon>frmBalanceIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\frmFertilizante.resx">
+      <DependentUpon>frmFertilizante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\frmIngresoFertilizante.resx">
+      <DependentUpon>frmIngresoFertilizante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\frmIngresoUrea.resx">
+      <DependentUpon>frmIngresoUrea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\frmMedicionPastoIngreso.resx">
+      <DependentUpon>frmMedicionPastoIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\frmPotreros.resx">
+      <DependentUpon>frmPotreros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\frmPotrerosIngreso.resx">
+      <DependentUpon>frmPotrerosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\frmRotacionPotreros.resx">
+      <DependentUpon>frmRotacionPotreros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\frmRotacionPotrerosIngreso.resx">
+      <DependentUpon>frmRotacionPotrerosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\Productos Urea\frmProductosUreaIngreso.resx">
+      <DependentUpon>frmProductosUreaIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\Productos Urea\frmProductosUreaIngresoDetalle.resx">
+      <DependentUpon>frmProductosUreaIngresoDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\Silos\frmSilos.resx">
+      <DependentUpon>frmSilos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\Silos\frmSilosConfeccionInterna.resx">
+      <DependentUpon>frmSilosConfeccionInterna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\Silos\frmSilosModificar.resx">
+      <DependentUpon>frmSilosModificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Praderas\Silos\frmSilosObs.resx">
+      <DependentUpon>frmSilosObs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\frmActualizaciones.resx">
+      <DependentUpon>frmActualizaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\frmResumenes.resx">
+      <DependentUpon>frmResumenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Manuales.resx">
+      <DependentUpon>Manuales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PlanillaCubiertas\frmRptPlanillaCubiertas.resx">
+      <DependentUpon>frmRptPlanillaCubiertas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PlanillaCubiertas\rptPlanillaCubiertas.rdlc" />
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Cubiertas\TNR\frmTNR.resx">
+      <DependentUpon>frmTNR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\TNR\frmRptTNR.resx">
+      <DependentUpon>frmRptTNR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\TNR\rptTNR.rdlc" />
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Traslados\Reportes\frmRptTraslado.resx">
+      <DependentUpon>frmRptTraslado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Traslados\Reportes\frmRptTrasladoPrev.resx">
+      <DependentUpon>frmRptTrasladoPrev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Traslados\frmTraslados.resx">
+      <DependentUpon>frmTraslados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosIngreso.resx">
+      <DependentUpon>frmTrasladosIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Traslados\frmTrasladosIngresoDIIO.resx">
+      <DependentUpon>frmTrasladosIngresoDIIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Traslados\Reportes\rptTraslado.rdlc" />
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Traslados\Reportes\rptTrasladoPrev.rdlc" />
+    <EmbeddedResource Include="Formularios\Herramientas\frmMensajesOLD.resx">
+      <DependentUpon>frmMensajesOLD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Herramientas\frmTableroGanado.resx">
+      <DependentUpon>frmTableroGanado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaCelos\frmRptConsultaCelos.resx">
+      <DependentUpon>frmRptConsultaCelos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaCelos\rptConsultaCelos.rdlc" />
+    <EmbeddedResource Include="Reportes\ConsultaGeneral\frmRptConsultaGeneral.resx">
+      <DependentUpon>frmRptConsultaGeneral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Consultas\AnalisisMasa\frmConsultaGraficos.resx">
+      <DependentUpon>frmConsultaGraficos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesIngreso.resx">
+      <DependentUpon>frmPalpacionesIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Produccion\Ganado\Palpaciones\frmPalpacionesIngresoDIIO.resx">
+      <DependentUpon>frmPalpacionesIngresoDIIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\frmMAIN.resx">
+      <DependentUpon>frmMAIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ConsultaGeneral\Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\config.ini" />
+    <None Include="bin\Debug\SGL.exe.config" />
+    <None Include="bin\Release\config.ini" />
+    <None Include="bin\Release\SGL.exe.config" />
+    <None Include="bin\Release\SGL.vshost.exe.config" />
+    <None Include="bin\Release\SGL.vshost.exe.manifest" />
+    <None Include="bin\Release\vs99E9.tmp" />
+    <None Include="MANUKA_PRODDataSet.xsc">
+      <DependentUpon>MANUKA_PRODDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MANUKA_PRODDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MANUKA_PRODDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MANUKA_PRODDataSet.xss">
+      <DependentUpon>MANUKA_PRODDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MNK_DS_ResumenCierre.xsc">
+      <DependentUpon>MNK_DS_ResumenCierre.xsd</DependentUpon>
+    </None>
+    <None Include="MNK_DS_ResumenCierre.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MNK_DS_ResumenCierre.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MNK_DS_ResumenCierre.xss">
+      <DependentUpon>MNK_DS_ResumenCierre.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Reportes\PlanillaCubiertas\MNKPROD_DS_PlanillaCubiertas.xsc">
+      <DependentUpon>MNKPROD_DS_PlanillaCubiertas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PlanillaCubiertas\MNKPROD_DS_PlanillaCubiertas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MNKPROD_DS_PlanillaCubiertas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\PlanillaCubiertas\MNKPROD_DS_PlanillaCubiertas.xss">
+      <DependentUpon>MNKPROD_DS_PlanillaCubiertas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\TNR\MNKPROD_DS_TNR.xsc">
+      <DependentUpon>MNKPROD_DS_TNR.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\TNR\MNKPROD_DS_TNR.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MNKPROD_DS_TNR.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\TNR\MNKPROD_DS_TNR.xss">
+      <DependentUpon>MNKPROD_DS_TNR.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ConsultaCelos\MANUKA_PROD_DSConsultaCelos.xsc">
+      <DependentUpon>MANUKA_PROD_DSConsultaCelos.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ConsultaCelos\MANUKA_PROD_DSConsultaCelos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MANUKA_PROD_DSConsultaCelos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\ConsultaCelos\MANUKA_PROD_DSConsultaCelos.xss">
+      <DependentUpon>MANUKA_PROD_DSConsultaCelos.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="Reportes\ConsultaGeneral\MANUKA_PROD_DataSet.xsc">
+      <DependentUpon>MANUKA_PROD_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ConsultaGeneral\MANUKA_PROD_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MANUKA_PROD_DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\ConsultaGeneral\MANUKA_PROD_DataSet.xss">
+      <DependentUpon>MANUKA_PROD_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\wsPRODgetPDF64\getPDF64.wsdl" />
+    <None Include="Service References\wsPRODgetPDF64\SGL.wsPRODgetPDF64.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsTESTgetPDF64\getPDF64.wsdl" />
+    <None Include="Service References\wsTESTgetPDF64\SGL.wsTESTgetPDF64.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="_Aplicacion\UpdateMy\updatemy.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.xml" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.xml" />
+    <Content Include="bin\Debug\SGL.exe" />
+    <Content Include="bin\Debug\SGL.pdb" />
+    <Content Include="bin\Debug\SGL.xml" />
+    <Content Include="bin\Debug\SGL_ISEGOVIA.exe" />
+    <Content Include="bin\Debug\_Aplicacion\PDFViewerNET\gsdll32.dll" />
+    <Content Include="bin\Debug\_Aplicacion\PDFViewerNET\itextsharp.dll" />
+    <Content Include="bin\Debug\_Aplicacion\PDFViewerNET\PDFLibNet.dll" />
+    <Content Include="bin\Debug\_Aplicacion\PDFViewerNET\PDFView.dll" />
+    <Content Include="bin\Debug\_Aplicacion\PDFViewerNET\tessnet2_32.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Release\Microsoft.ReportViewer.WinForms.xml" />
+    <Content Include="bin\Release\Microsoft.VisualBasic.PowerPacks.Vs.dll" />
+    <Content Include="bin\Release\SGL.exe" />
+    <Content Include="bin\Release\SGL.pdb" />
+    <Content Include="bin\Release\SGL.vshost.exe" />
+    <Content Include="bin\Release\SGL.xml" />
+    <Content Include="bin\Release\update\Microsoft.VisualBasic.PowerPacks.dll" />
+    <Content Include="bin\Release\update\SGL.exe" />
+    <Content Include="bin\Release\_Aplicacion\PDFViewerNET\gsdll32.dll" />
+    <Content Include="bin\Release\_Aplicacion\PDFViewerNET\itextsharp.dll" />
+    <Content Include="bin\Release\_Aplicacion\PDFViewerNET\PDFLibNet.dll" />
+    <Content Include="bin\Release\_Aplicacion\PDFViewerNET\PDFView.dll" />
+    <Content Include="bin\Release\_Aplicacion\PDFViewerNET\tessnet2_32.dll" />
+    <Content Include="icono_produccion.ico" />
+    <Content Include="manuka.ico" />
+    <None Include="Service References\wsTESTgetPDF64\getPDF64.disco" />
+    <None Include="Service References\wsTESTgetPDF64\configuration91.svcinfo" />
+    <None Include="Service References\wsTESTgetPDF64\configuration.svcinfo" />
+    <None Include="Service References\wsTESTgetPDF64\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\wsPRODgetPDF64\getPDF64.disco" />
+    <None Include="Service References\wsPRODgetPDF64\configuration91.svcinfo" />
+    <None Include="Service References\wsPRODgetPDF64\configuration.svcinfo" />
+    <None Include="Service References\wsPRODgetPDF64\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\door_out.png" />
+    <None Include="Resources\page_edit.png" />
+    <None Include="Resources\arrow_down.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\folder_image.png" />
+    <None Include="Resources\ayuda.png" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Aplicacion\PDFViewerNET\gsdll32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Aplicacion\PDFViewerNET\itextsharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Aplicacion\PDFViewerNET\PDFLibNet.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Aplicacion\PDFViewerNET\PDFView.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Aplicacion\PDFViewerNET\tessnet2_32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Aplicacion\UpdateMy\UpdateMy.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\wsPRODgetPDF64\" />
+    <WCFMetadataStorage Include="Service References\wsTESTgetPDF64\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\Produccion\Ganado\Administracion\Cambio Categoria\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

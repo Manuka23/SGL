@@ -1,0 +1,427 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SGL
+</name>
+</assembly>
+<members>
+<member name="T:SGL.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.accept">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.add">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.arrow_down">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.ayuda">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.delete">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.disk">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.door_out">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.folder_image">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SGL.My.Resources.Resources.page_edit">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:SGL.MNK_DS_ResumenCierre">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SGL.MNK_DS_ResumenCierre.spCierres_ResumenPeriodoPorCategoriasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SGL.MNK_DS_ResumenCierre.spCierres_ResumenPeriodoPorCategoriasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SGL.MNK_DS_ResumenCierre.spCierres_ResumenPeriodoPorCategoriasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SGL.MNK_DS_ResumenCierreTableAdapters.spCierres_ResumenPeriodoPorCategoriasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SGL.MNK_DS_ResumenCierreTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SGL.MNK_DS_ResumenCierreTableAdapters.TableAdapterManager.UpdateUpdatedRows(SGL.MNK_DS_ResumenCierre,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MNK_DS_ResumenCierreTableAdapters.TableAdapterManager.UpdateInsertedRows(SGL.MNK_DS_ResumenCierre,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MNK_DS_ResumenCierreTableAdapters.TableAdapterManager.UpdateDeletedRows(SGL.MNK_DS_ResumenCierre,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SGL.MNK_DS_ResumenCierreTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SGL.MNK_DS_ResumenCierreTableAdapters.TableAdapterManager.UpdateAll(SGL.MNK_DS_ResumenCierre)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SGL.MNK_DS_ResumenCierreTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SGL.MNK_DS_ResumenCierreTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_PlanillaCubiertas">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_PlanillaCubiertas.spCubiertas_PlanillaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_PlanillaCubiertas.spCubiertas_PlanillaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_PlanillaCubiertas.spCubiertas_PlanillaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.spCubiertas_PlanillaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.TableAdapterManager.UpdateUpdatedRows(SGL.MNKPROD_DS_PlanillaCubiertas,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.TableAdapterManager.UpdateInsertedRows(SGL.MNKPROD_DS_PlanillaCubiertas,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.TableAdapterManager.UpdateDeletedRows(SGL.MNKPROD_DS_PlanillaCubiertas,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.TableAdapterManager.UpdateAll(SGL.MNKPROD_DS_PlanillaCubiertas)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_PlanillaCubiertasTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_TNR">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_TNR.spGanado_TNRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_TNR.spGanado_TNRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_TNR.spGanado_TNRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_TNRTableAdapters.spGanado_TNRTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_TNRTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_TNRTableAdapters.TableAdapterManager.UpdateUpdatedRows(SGL.MNKPROD_DS_TNR,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_TNRTableAdapters.TableAdapterManager.UpdateInsertedRows(SGL.MNKPROD_DS_TNR,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_TNRTableAdapters.TableAdapterManager.UpdateDeletedRows(SGL.MNKPROD_DS_TNR,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_TNRTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SGL.MNKPROD_DS_TNRTableAdapters.TableAdapterManager.UpdateAll(SGL.MNKPROD_DS_TNR)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_TNRTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SGL.MNKPROD_DS_TNRTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DSConsultaCelos">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DSConsultaCelos.spGanado_ConsultaGeneral3DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DSConsultaCelos.spGanado_ConsultaGeneral3Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DSConsultaCelos.spGanado_ConsultaGeneral3RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.spGanado_ConsultaGeneral3TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.TableAdapterManager.UpdateUpdatedRows(SGL.MANUKA_PROD_DSConsultaCelos,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.TableAdapterManager.UpdateInsertedRows(SGL.MANUKA_PROD_DSConsultaCelos,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.TableAdapterManager.UpdateDeletedRows(SGL.MANUKA_PROD_DSConsultaCelos,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.TableAdapterManager.UpdateAll(SGL.MANUKA_PROD_DSConsultaCelos)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DSConsultaCelosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DataSet.spGanado_ConsultaGeneral2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DataSet.spGanado_ConsultaGeneral2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DataSet.spGanado_ConsultaGeneral2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DataSetTableAdapters.spGanado_ConsultaGeneral2TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SGL.MANUKA_PROD_DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SGL.MANUKA_PROD_DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SGL.MANUKA_PROD_DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SGL.MANUKA_PROD_DataSetTableAdapters.TableAdapterManager.UpdateAll(SGL.MANUKA_PROD_DataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SGL.MANUKA_PROD_DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="M:SGL.Configuracion.#ctor(System.String)">
+ <summary>
+ Constructor de la Configuracion
+ </summary>
+ <param name="ConfigPath">La ruta del arcchivo de Configuración.</param>
+</member>
+<member name="M:SGL.Configuracion.ReadValue(System.String,System.String)">
+ <summary>
+ Leer un valor desde la configuración de tipo string
+ </summary>
+ <param name="section">La sección dentro del archivo de configuración</param>
+ <param name="key">La clave en la sección del archivo de configuración</param>
+</member>
+<member name="M:SGL.Configuracion.ReadValue(System.String,System.String,System.Int32)">
+ <summary>
+ Leer un valor desde la configuración
+ </summary>
+ <param name="section">La sección dentro del archivo de configuración</param>
+ <param name="key">La clave en la sección del archivo de configuración</param>
+</member>
+<member name="M:SGL.Configuracion.WriteValue(System.String,System.String,System.String)">
+ <summary>
+ Grabar un valor en la configuración
+ </summary>
+ <param name="section">La sección dentro del archivo de configuración</param>
+ <param name="key">LA clave en la sección del archivo de configuración</param>
+ <param name="value">El valor a grabar en la clave de la sección</param>
+</member>
+<member name="F:SGL.ListViewOrdenarColumnas.m_SortingColumn">
+ ORDEN DE COLUMNAS EN DIFERENTES LIST VIEW DE ESTE FORMULARIO
+</member>
+</members>
+</doc>
