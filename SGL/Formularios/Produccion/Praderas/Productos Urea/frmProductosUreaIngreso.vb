@@ -43,6 +43,7 @@ Public Class frmProductosUreaIngreso
             Try
                 While rdr.Read()
 
+
                     Dim item As New ListViewItem((i + 1).ToString.Trim)    'primera columna, para ordenar los datos
                     item.SubItems.Add(rdr("EmpresaCod").ToString.Trim)
                     item.SubItems.Add(rdr("ProdUreaCod").ToString.Trim)
