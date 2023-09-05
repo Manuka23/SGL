@@ -665,7 +665,7 @@ Public Class frmMAIN
                 frmUsuariosCambioContrasena.Show()
                 frmUsuariosCambioContrasena.BringToFront()
 
-            Case "PRODUCTOS DE UREA"
+            Case "MAESTRO FERTILIZANTES"
                 frmProductosUreaIngreso.MdiParent = Me
                 frmProductosUreaIngreso.Show()
                 frmProductosUreaIngreso.BringToFront()

@@ -95,7 +95,7 @@ Partial Class frmProductosUreaIngresoDetalle
         Me.btnFinalizar.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFinalizar.Image = CType(resources.GetObject("btnFinalizar.Image"), System.Drawing.Image)
         Me.btnFinalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnFinalizar.Location = New System.Drawing.Point(16, 712)
+        Me.btnFinalizar.Location = New System.Drawing.Point(16, 619)
         Me.btnFinalizar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnFinalizar.Name = "btnFinalizar"
         Me.btnFinalizar.Size = New System.Drawing.Size(132, 43)
@@ -107,7 +107,7 @@ Partial Class frmProductosUreaIngresoDetalle
         '
         Me.Button3.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(432, 712)
+        Me.Button3.Location = New System.Drawing.Point(432, 619)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(132, 43)
@@ -159,7 +159,7 @@ Partial Class frmProductosUreaIngresoDetalle
         Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox5.Size = New System.Drawing.Size(548, 641)
+        Me.GroupBox5.Size = New System.Drawing.Size(548, 548)
         Me.GroupBox5.TabIndex = 126
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Parámetros"
@@ -503,7 +503,7 @@ Partial Class frmProductosUreaIngresoDetalle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(577, 815)
+        Me.ClientSize = New System.Drawing.Size(577, 713)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnFinalizar)
